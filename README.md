@@ -1,5 +1,11 @@
 # AdapterIntegration
 
+
+To Run this project :
+1. Install maven if it is not already present in your machine
+2. Run mvn clean install at the same level as pom.xml
+3. Copy the AdapterIntegration.war from the target folder and deploy it on any tomcat instance
+
 The following API's are exposed:
   1. Get List of Files and Folders inside a Folder
   2. Download a File in Folder
@@ -52,7 +58,7 @@ Produces : Application/OCTET-STREAM
 
 Payload : {"fileId":"<fileId to download>"}
 
-No Response; Can extrapolate the same for downloading multiple files
+No Response; Can extrapolate the same for downloading multiple files. File gets downloaded to the bin folder of the tomcat
 
 Upload File:
 
